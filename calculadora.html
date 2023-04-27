@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="autor" content="Giovanna Zambrano" />
+        <title>Calculadora en Javascript</title>
+
+        <link href="calculadora.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <h1>Calculadora en Javascript por Giovanna Zambrano</h1>
+        </header>
+        <div class="container">
+            <div class="calculadora">
+                <div class="display">
+                    <div id="valor-anterior"></div>
+                    <div id="valor-actual"></div>
+                </div> 
+                <button onclick="display.borrarTodo()" class="col-2">C</button>
+                <button onclick="display.borrar()">&larr;</button>
+                <button onclick="raizCHTML()" class="operador1" id="raizc" value="raizc">√</button> 
+                <button onclick="arcotangenteHTML()" class="operador2" id="atan" value="arcotangente">atan</button>
+                <button onclick="senoHTML()" class="operador3" id="sen" value="seno">sen</button>
+                <button onclick="cosenoHTML()" class="operador4" id="cos" value="coseno">cos</button>
+                <button onclick="tangenteHTML()" class="operador5" id="tan" value="tangente">tan</button>             
+                <button class="numero numero" id="boton">7</button>
+                <button class="numero" id="boton">8</button>
+                <button class="numero" id="boton">9</button>
+                <button class="operador" value="dividir">/</button>
+                <button class="numero" id="boton">4</button>
+                <button class="numero" id="boton">5</button>
+                <button class="numero" id="boton">6</button>
+                <button class="operador" id="operador" value="multiplicar">X</button>
+                <button class="numero" id="boton">1</button>
+                <button class="numero" id="boton">2</button>
+                <button class="numero" id="boton">3</button>
+                <button class="operador" id="operador" value="restar">-</button>
+                <button class="operador" id="operador" value="suma">+</button>
+                <button class="numero" class="col-2">0</button>
+                <button class="numero">.</button>
+                <button class="operador" value="igual">=</button>
+            </div>  
+        </div>       
+    </body>
+
+    <script src = "calculadora.js" type="text/javascript"></script>
+</html>

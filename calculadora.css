@@ -1,0 +1,78 @@
+* {
+    font-family: Cambria;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color:rgba(203, 43, 169, 0.803);
+}
+
+body {
+    margin: 0;
+    background-color:rgb(236, 192, 175);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #558f81;
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px #f5e4e433;
+}
+
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    font-size: 1.5em;
+    border-radius: 32px;
+    background-color: rgb(108, 65, 149);
+    border: none;
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
+}
+
+button:active {
+    background-color: rgb(52, 101, 101);
+}
+
+button:focus {
+    outline: none;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.display {
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #363636;
+    border-radius: 32px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #00000033;
+}
+
+#valor-actual {
+    font-size: 1.5em;
+}
+
+#valor-anterior {
+    font-size: 2em;
+}
