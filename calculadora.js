@@ -90,6 +90,10 @@ Calculadora.prototype.raizc = function (num1) {
     return Math.sqrt(num1);
 }
 
+Calculadora.prototype.pi = function (num1) {
+    return Math.PI;
+}
+
 var displayValorAnterior = document.getElementById('valor-anterior');
 var displayValorActual = document.getElementById('valor-actual');
 var botonesNumeros = document.querySelectorAll('.numero');
@@ -104,33 +108,3 @@ botonesNumeros.forEach(boton => {
 botonesOperadores.forEach(boton => {
     boton.addEventListener('click', () => display.computar(boton.value))
 });
-
- function cosenoHTML(){
-    var num=document.getElementById("valor-actual").innerText;
-    displayValorActual.innerText=calculadora.coseno(num);
-    displayValorAnterior.innerText="cos("+num+")";
-}
-
-function senoHTML(){
-    var num=document.getElementById("valor-actual").innerText;
-    displayValorActual.innerText=calculadora.seno(num);
-    displayValorAnterior.innerText="sen("+num+")";
-}
-
-function arcotangenteHTML(){
-    var num=document.getElementById("valor-actual").innerText;
-    displayValorActual.innerText=calculadora.arcotangente(num);
-    displayValorAnterior.innerText="atan("+num+")";
-}
-
-function tangenteHTML(){
-    var num=document.getElementById("valor-actual").innerText;
-    displayValorActual.innerText=calculadora.tangente(num);
-    displayValorAnterior.innerText="tan("+num+")";
-}
-
-function raizCHTML(){
-    var num=document.getElementById("valor-actual").innerText;
-    displayValorActual.innerText=calculadora.raizc(num);
-    displayValorAnterior.innerText="√("+num+")";
-}
